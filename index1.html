@@ -1,0 +1,334 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>index</title>
+<!--
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.0.0/build/cssreset/reset-min.css">
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.0.0/build/cssbase/base-min.css">
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.0.0/build/cssfonts/fonts-min.css">
+-->
+<link rel="stylesheet" type="text/css" href="stylesheets/reset-min.css">
+<link rel="stylesheet" type="text/css" href="stylesheets/base-min.css">
+<link rel="stylesheet" type="text/css" href="stylesheets/fonts-min.css">
+<style type="text/css">
+<!--
+/*body {font-family: "Microsoft YaHei",Tahoma,Helvetica,Arial,sans-serif;}*/
+
+a {
+  color:#3366CC;
+  text-decoration:none;
+}
+
+a:hover {
+  color:#FF6600;
+  text-decoration:underline;
+}
+
+/* Form Elements */
+/*
+input.txt, input[type="text"], input[type="password"] {font-size:123.1%;color:#767676;font-weight:700;}
+input.txt, input[type="text"], input[type="password"], textarea, select {
+background:#f7f7f7;
+border-color:#C6C6C6 #EFEFEF #EFEFEF #C6C6C6;
+border-style:solid;
+border-width:1px;
+margin:0;
+padding:2px;
+}
+input:focus, select:focus, textarea:focus {background:#FFFFCC;}
+*/
+
+#container {
+  background-color:#F5F5F5;
+  padding:10px;
+  width:748px;
+  margin:0 auto;
+  padding-top:10px;
+  font-size: 93%;
+  
+}
+#mainContent {
+  float:left;
+  width:100%;
+}
+
+.menuTab {
+  position:relative;
+}
+
+.menuTab ul {
+  border-bottom:1px solid #DCDCDC;
+  margin: 0 0 -1px 0;
+  padding-left:10px;
+  height:24px;
+}
+
+.menuTab li {
+  float:left;
+  margin:0 3px;
+  margin-bottom:-1px;
+  list-style:none;
+}
+
+.menuTab li.selected {
+  background-color:#FFFFFF;
+  border:1px solid #DCDCDC;
+  border-bottom:none;
+}
+
+.menuTab ul li a {
+  float: left;
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+.menuTab li a, .menuTab li a:visited {
+  height:25px;
+  line-height:25px;
+  font-weight:700;
+  color:#313131;
+  text-decoration: none;
+}
+
+.menuTab li a:hover {
+  border: 1px solid #dcdcdc;
+  border-bottom: none;
+  height: 23px;
+  line-height: 23px;
+  padding: 0 9px;
+  background-color: #fff;
+  margin-bottom: 1px;
+  text-decoration: none;
+}
+
+.menuTab li.selected a {
+  height: 24px;
+  line-height: 23px;
+}
+.menuTab li.selected a, .menuTab li.selected a:visited {
+  color: #E01216;
+  text-decoration: none;
+}
+.menuTab li.selected a:hover {
+  border: none;
+  height: 24px;
+  line-height: 23px;
+  _line-height: 25px;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.extraLink {
+  text-align: right;
+  position: absolute;
+  right: 0;
+  top: 0;
+  line-height: 30px;
+}
+.extraLink a {
+  margin-left: 10px;
+}
+
+#itemWrap {
+  border: 1px solid #dcdcdc;
+  border-top: none;
+  padding: 10px;
+  background-color: #fff;
+  zoom: 1;
+}
+
+#itemHeader {
+  border-bottom:1px solid #EEEEEE;
+}
+
+#itemBody {
+  position:relative;
+}
+
+ul#items {
+  margin:0 ;
+}
+ul#items li {
+  list-style:none;
+  position: relative;
+  overflow: hidden;
+  padding: 15px 1px 15px 10px;
+  color: #666;
+  border: 1px solid #fff;
+  border-bottom-color: #eee;
+  border-top: 0;
+  _overflow: auto;
+}
+ul#items li:hover, ul#items li.hover {
+  border-color: #eee;
+  background-color: #fafaff;
+}
+ul#items li img {
+  float:left;
+  margin-right: 10px;
+  border:1px solid #E1E1E1;
+}
+
+ul#items li .a {float:left; width:402px; height:80px;}
+ul#items li .b {float:left; margin-left:10px; width:200px; height:80px; text-align:right;}
+
+ul#items li h4 {margin-bottom:5px;}
+ul#items li .a p {margin:4px 0;line-height:1.4;}
+ul#items li .a span {display:inline-block; margin-right:5px;}
+ul#items li .a span.title{margin-right:2px;}
+ul#items li .price{
+  background:transparent url(http://a.tbcdn.cn/sys/common/img/rmb.png) no-repeat scroll 0 0;
+  padding-left:16px;
+  color:#CC0000;
+  text-decoration:line-through;
+  font-weight:700;
+}
+ul#items li .pptNum{background-color:#EEEEEE;border:1px solid #DDDDDD;color:#666666;padding:1px 3px;}
+ul#items li .pptNum strong{background-color:#FFEECC;color:#CC0000;font-weight:700;}
+ul#items li .preWinner {background:#FFFFFF url(images/icons/medal_16x16.png) no-repeat scroll 0 0;text-indent:18px;}
+ul#items li .invite{background:#FFFFFF url(images/icons/invite_friends.png) no-repeat scroll 0 0;}
+ul#items li .copyLink{background:#FFFFFF url(images/icons/page_link.png) no-repeat scroll 0 0;}
+ul#items li .invite a,ul#items li .copyLink a{margin-left:18px;}
+ul#items li .timeLimit{color:#FF6600;}
+ul#items li .bidding{float:right;border:1px solid #9E9E9E;}
+ul#items li .bidding, ul#items li .bidding span{display:block;}
+ul#items li .bidding, ul#items li .bidding span, ul#items li .bidding button, ul#items li .bidding input{width:60px; text-align:center;}
+ul#items li .biddingNum{height:30px;background:#FFFFCC;}
+ul#items li .biddingNum input{border:none;border-bottom:1px solid #9E9E9E;background:#FFFFCC;padding:6px 0;height:18px;font-size:123.1%;color:#E01317;font-weight:bold;}
+ul#items li .biddingBtn{height:22px;border-top:1px solid #9E9E9E;}
+
+.biddingBtn, .biddingBtn button {
+  background: url(images/redBtn.png) no-repeat 0 0;
+  height: 22px;
+  text-align:center;
+}
+.biddingBtn {
+  display: inline-block;
+}
+.biddingBtn button {
+  display:block;
+  color:#FFFFFF;
+  padding:0;
+  border:0;
+  cursor:pointer;
+  line-height:22px;
+}
+
+.biddingBtn button:hover {
+  background-position:bottom;
+}
+
+/* Pagination
+-------------------------------------------------------------- */
+.pagination {
+  overflow:hidden;
+  zoom:1;
+  padding: 3px 0;
+  margin: 10px 0;
+  text-align:right;
+}
+.pagination a,.pagination span{
+  margin:1px;
+  border:1px solid #C3C3C3;
+  text-decoration: none;
+  color:#86BF3B;
+  display:inline-block;
+  display:-moz-display-box;
+  *display:inline;
+  zoom:1;
+  vertical-align:middle;
+  height:20px;
+  line-height:20px;
+  padding:0 6px;
+}
+.pagination a:hover, .pagination a:active {
+  border-color:#86BF3B;
+  background-color:#86BF3B;
+  color:#FFFFFF;
+}
+.pagination span.current {
+  border-color:#DF430D;
+  font-weight:bold;
+  background-color:#FF713F;
+  color:#FFFFFF;
+}
+.pagination span.disabled {
+  border-color:#EEE;
+  color:#DDD;
+}
+
+.clearfloat {
+  clear:both;
+  height:0;
+  font-size: 1px;
+  line-height: 0px;
+}
+-->
+</style>
+</head>
+
+<body>
+
+  <div id="container">
+    <div id="mainContent">
+      <div class="menuTab">
+        <ul>
+          <li class="selected"><a href="#">正在热拍</a></li>
+          <li><a href="#">即将开拍</a></li>
+          <li><a href="#">我参与的竞拍</a></li>
+        </ul>
+        <p class="extraLink">
+          <a href="#">我的拍拍堂</a>
+          <a href="#">查看帮助</a>
+        </p>
+      </div>
+      <div id="itemWrap">
+        <div id="itemHeader">xxxx</div>
+        <div id="itemBody">
+          <ul id="items">
+            <li>
+              <a target="_blank" href="#">
+                <img src="http://img08.taobaocdn.com/bao/uploaded/i8/T1LfRpXfxEXXadjPg6_062303.jpg_80x80.jpg"/>
+              </a>
+              <div class="a">
+                <h4><a target="_blank" href="#">英伦品味 人气热销千件 男士钱夹、男式钱包...</a></h4>
+                <p>
+                  <span class="title">市场价: </span><span class="price">268.00元</span>
+                </p>
+                <p>
+                  <span class="title">单次出价: </span><span class="pptNum"><strong>20</strong> 拍拍糖</span>
+                  <span class="title">预中幸运儿: </span><span class="preWinner"><a href="#" title="该用户的出价目前是唯一且最低价，您在右侧出价有可能更新此记录成为幸运儿哦！">淘江山更淘美人</a></span>
+                </p>
+                <p>
+                  <span class="invite"><a href="#">邀请好友</a></span>
+                  <span class="copyLink"><a href="#">复制链接</a></span>
+                </p>
+              </div>
+              <div class="b">
+                <h4><cite>剩余时间: </cite><span class="timeLimit">1天1小时33分26秒</span></h4>
+                <div class="bidding">
+                  <form method="post" action="">
+                    <span class="biddingNum"><input name="bidding_num_1" id="bidding_num_1" type="text" value="0.00" maxlength="8" /></span>
+                    <span class="biddingBtn"><button id="bidding_btn_1" type="submit">我要出价</button></span>
+                  </form>
+                </div>
+              </div>
+              <br class="clearfloat" />
+            </li>
+          </ul>
+          <div class="pagination">
+            <span class="disabled prev_page">上一页</span>
+            <span class="current">1</span>
+            <a rel="next" href="?page=2">2</a>
+            <a href="?page=3">3</a>
+            <a rel="next" class="next_page" href="?page=2">下一页</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br class="clearfloat" />
+  </div>
+
+</body>
+</html>
